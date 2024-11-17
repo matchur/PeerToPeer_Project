@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="peertopeer.TelaInicialController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="165.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="63.0" prefWidth="475.0">
+               <children>
+                  <Label text="Chat P2P">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ta_username" promptText="Username" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="475.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="ta_ip" promptText="I.P">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="ta_port" promptText="PORT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#clk_connect" prefHeight="38.0" prefWidth="43.0">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../connect.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="323.0" prefWidth="455.0" spacing="5.0">
+               <children>
+                  <TextArea fx:id="ta_chat" prefHeight="323.0" prefWidth="291.0">
+                     <HBox.margin>
+                        <Insets top="17.0" />
+                     </HBox.margin>
+                  </TextArea>
+                  <VBox alignment="CENTER" prefHeight="323.0" prefWidth="183.0">
+                     <children>
+                        <Label text="Online" />
+                        <TextArea fx:id="ta_online" prefHeight="334.0" prefWidth="171.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="455.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#clk_centralDownloads" text="Central de Downloads" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="455.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="tf_message" prefHeight="25.0" prefWidth="401.0" promptText="Digite algo..." />
+                  <Button mnemonicParsing="false" onAction="#clk_enviar" text="Enviar" />
+               </children>
+            </HBox>
+            <HBox prefHeight="14.0" prefWidth="455.0">
+               <children>
+                  <Label text="Emotes:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="17.0" prefWidth="455.0" spacing="6.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#clk_emote1" text=":)" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote2" text=":(" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote3" text=":P" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote4" text=":D" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote5" text=":O" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote6" text=":C" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote7" text="&gt;:)" />
+                  <Button mnemonicParsing="false" onAction="#clk_emote8" text="&gt;:(" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
