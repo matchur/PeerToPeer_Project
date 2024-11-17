@@ -45,14 +45,14 @@ Controlador da interface, gerencia a lógica de interação com os componentes da t
 ### Compile o projeto: 
 Navegue até o diretório do projeto e compile os arquivos Java:
 ```bash
-javac PeerToPeer.java```
-
+javac PeerToPeer.java
+```
 ### Execute o projeto: 
 
 Execute a aplicação com o seguinte comando:
 
 ```bash
 
-java PeerToPeer```
-
+java PeerToPeer
+```
 
