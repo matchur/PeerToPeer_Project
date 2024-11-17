@@ -25,11 +25,7 @@ Classe responsável por escutar as mensagens recebidas de outros peers. Utiliza u
 
 Classe principal da aplicação, onde a interface gráfica é carregada e o ciclo de vida da aplicação é iniciado.
 
-### 3. `TelaInicial.fxml`
-
-Arquivo FXML que define a estrutura da interface do usuário, incluindo campos de entrada (nome de usuário, IP, porta) e áreas de exibição (chat e lista de usuários online).
-
-### 4. `TelaInicialController.java`
+### 3. `TelaInicialController.java`
 
 Controlador da interface, gerencia a lógica de interação com os componentes da tela, incluindo a conexão entre os peers, envio de mensagens e emotes. A comunicação é feita via **DatagramSocket** utilizando pacotes UDP.
 
@@ -49,7 +45,7 @@ Controlador da interface, gerencia a lógica de interação com os componentes da t
 ### Compile o projeto: 
 Navegue até o diretório do projeto e compile os arquivos Java:
 ```bash
-javac PeerToPeer.java´´´
+javac PeerToPeer.java```
 
 ### Execute o projeto: 
 
@@ -57,6 +53,6 @@ Execute a aplicação com o seguinte comando:
 
 ```bash
 
-java PeerToPeer´´´
+java PeerToPeer```
 
 
